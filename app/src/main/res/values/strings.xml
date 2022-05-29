@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Deduyo_Wage_Calculator</string>
+    <string-array name="employeeTypes">
+        <item>Regular</item>
+        <item>Probationary</item>
+        <item>Part-time</item>
+    </string-array>
+    //title
+    <string name="calculator">WAGE CALCULATOR</string>
+    //buttons
+    <string name="back">PREVIOUS PAGE</string>
+    <string name="calculate">Calculate</string>
+    //input
+    <string name="enterName">Enter name…</string>
+    <string name="enterHours">Enter hours…</string>
+    <string name="type">Employee Type:</string>
+    //output
+    <string name="result">Result</string>
+    <string name="totalWage">Total Wage:</string>
+    <string name="regWage">Regular Wage:</string>
+    <string name="OTWage">Overtime Wage:</string>
+    <string name="OT">Overtime:</string>
+    <string name="output">N/A</string>
+    <string name="hours">Hours:</string>
+    <string name="name">Name:</string>
+    <string name="todo">TODO</string>
+</resources>

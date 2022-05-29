@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mainInputView">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/calcbg"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/segoeuib"
+        android:text="@string/calculator"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/segoeuib"
+        android:text="@string/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculator" />
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/white"
+        android:fontFamily="@font/segoeuii"
+        android:hint="@string/enterName"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/segoeuib"
+        android:text="@string/hours"
+        app:layout_constraintEnd_toEndOf="@+id/inputName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/inputName"
+        app:layout_constraintTop_toBottomOf="@+id/inputName" />
+
+    <EditText
+        android:id="@+id/inputTime"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:fontFamily="@font/segoeuii"
+        android:hint="@string/enterHours"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/hours"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/hours"
+        app:layout_constraintTop_toBottomOf="@+id/hours"
+        tools:ignore="TextContrastCheck" />
+
+    <Spinner
+        android:id="@+id/inputType"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/segoeuil"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/employee"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/employee"
+        app:layout_constraintTop_toBottomOf="@+id/employee"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/ebrimabd"
+        android:text="@string/calculate"
+        android:background="@color/cobalt"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/inputType"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/inputType"
+        app:layout_constraintTop_toBottomOf="@+id/inputType" />
+
+    <TextView
+        android:id="@+id/employee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/segoeuib"
+        android:text="@string/calculator"
+        app:layout_constraintEnd_toEndOf="@+id/inputTime"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/inputTime"
+        app:layout_constraintTop_toBottomOf="@+id/inputTime" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
